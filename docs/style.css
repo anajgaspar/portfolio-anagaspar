@@ -4,8 +4,28 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    background: linear-gradient(to bottom, #fcacbc 4%, #FECCD7 35%, #fdd7df 60%, white 80%);
+}
+
 nav {
-    background-color: #fcbbcb;
+    background-color: #fcacbc;
+}
+
+.btn-custom {
+    background-color: transparent;
+    color: #B9476A;
+    border: 2px solid #B9476A;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    color: #B9476A;
+    border-color: #B9476A;
+    transform: scale(1.05);
 }
 
 #resumo {
@@ -16,9 +36,15 @@ nav {
 button a {
     cursor: pointer;
     text-decoration: none;
-    color: #b9476a;
+    color: #B9476A;
 }
 
 svg {
     color: #b9476a;
+}
+
+#card {
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
 }

@@ -13,15 +13,30 @@
 <body>
     <main>
         <header id="home">
-            <nav class="navbar fixed-top navbar-expand-md">
+            <nav class="navbar fixed-top navbar-expand-lg">
                 <div class="container-fluid">
-                    <a href="#home" class="navbar-brand mx-4"><span style='color: #B9476A'><</span>anagaspar<span style='color: #B9476A'>/></span></a>
-                    <div class="navbar-nav mx-4 flex gap-3">
-                        <a href="#home" class="nav-link active">Home</a>
-                        <a href="#skills" class="nav-link">Skills</a>
-                        <a href="#sobre" class="nav-link">Sobre</a>
-                        <a href="#projetos" class="nav-link">Projetos</a>
-                        <a href="#contato" class="nav-link">Contato</a>
+                    <a href="#" class="navbar-brand mx-4"><span style='color: #B9476A'><</span>anagaspar<span style='color: #B9476A'>/></span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguer" aria-controls="hamburguer" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse me-auto" id="hamburguer">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skills" class="nav-link">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sobre" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projetos" class="nav-link">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -32,7 +47,7 @@
                 <h4 class="fs-3" style="color: #B9476A">Ana Gaspar</h4>
                 <h4 class="fs-3">Desenvolvedora de Software</h4>
                 <h4 class="fs-6" style="color: #B9476A">Iniciante</h4>
-                <button type="button" class="btn btn-outline-danger mt-3">
+                <button class="btn-custom">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
                     </svg>
@@ -44,8 +59,15 @@
             <div class="container-md">
                 <h4 class="fs-3">Linguagens e tecnologias</h4>
                 <p class="fs-6">Aqui estão as linguagens e tecnologias que possuo contato.</p>
-                <div class="py-5">
-                    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,figma,mysql,python,flask,git" class="mx-auto d-block">
+                <div class="row row-cols-3 justify-content-center py-5">
+                    <img src="https://skillicons.dev/icons?i=html" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=css" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=bootstrap" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=figma" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=mysql" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=python" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=flask" class="col pb-3" style="width: 75px;">
+                    <img src="https://skillicons.dev/icons?i=git" class="col pb-3" style="width: 75px;">
                 </div>
             </div>
         </section>
@@ -53,9 +75,10 @@
             <div class="container-md">
                 <h4 class="fs-3">Sobre</h4>
                 <p class="fs-6">Um pouco sobre mim.</p>
-                <div class="row justify-content-center">
-                    <img src="img" class="col-2 py-5" style="width: 400px;">
-                    <p class="fs-6 col-3 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatum voluptates, natus voluptas deserunt inventore id nesciunt nihil aperiam ducimus suscipit dolor animi tenetur fuga nulla aliquam odio soluta ipsam.</p>
+                <div class="row justify-content-center py-5 gap-3">
+                    <img src="./images/foto de perfil.jpeg" class="col-md-5 rounded-circle" style="width: 300px;">
+                    <p class="fs-6 col-md-5 align-self-center">Olá, meu nome é Ana Júlia, e estou cursando o 1º semestre de Desenvolvimento de Software Multiplataforma na FATEC - São José dos Campos.<br> 
+                    <br>Socialmente, diria que meus pontos fortes são resiliência, adaptabilidade, criatividade e proatividade. Estou sempre em busca de novas oportunidades para aprender e expandir meus conhecimentos.</p>
                 </div>
             </div>
         </section>
@@ -63,14 +86,14 @@
             <div class="container-md">
                 <h4 class="fs-3">Projetos</h4>
                 <p class="fs-6">Projetos que desenvolvi.</p>
-                <div class="row justify-content-center row-cols-1 g-4 py-5">
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="" class="card-img-top">
-                            <div class="card-body">
+                <div class="row justify-content-center py-5 gap-4">
+                    <div class="col-md-5">
+                        <div class="card" id="card">
+                            <img src="./images/spoiler-api.png" class="card-img-top img-fluid">
+                            <div class="card-body row align-items-center">
                                 <h4 class="card-title">API - Desempenho de Vereadores</h4>
                                 <a href="https://github.com/Draco-Imperium/API_FATEC1" class="card-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                         <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
                                       </svg>
@@ -78,13 +101,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">Portfólio - Ana Gaspar</h4>
+                    <div class="col-md-5">
+                        <div class="card" id="card">
+                            <img src="./images/spoiler-portfolio.png" class="card-img-top img-fluid">
+                            <div class="card-body row align-items-center">
+                                <h4 class="card-title">Portfólio Pessoal</h4>
                                 <a href="https://github.com/anajgaspar/portfolio-anagaspar" class="card-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
                                         <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
                                     </svg>
@@ -99,12 +122,28 @@
             <div class="container-md">
                 <h4 class="fs-3">Contato</h4>
                 <p class="fs-6">Entre em contato!</p>
-                <button class="btn btn-outline-danger d-block mx-auto p-2 my-5" style="width: 120px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                      </svg>
-                    <a href="mailto:anajulia3907@gmail.com">E-mail</a>
-                </button>
+                <form class="my-5">
+                    <div class="row justify-content-start pb-2">
+                        <div class="col-md-3">
+                            <label for="inputEmail" class="form-label w-25">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="row justify-content-start pb-2">
+                        <div class="col-md-3">
+                            <label for="inputMessage" class="form-label w-25">Conteúdo</label>
+                            <input type="text" class="form-control" id="inputMessage">
+                        </div>
+                    </div>
+                    <div class="row justify-content-start pt-2">
+                        <button class="btn-custom col-md-3 mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                            </svg>
+                            <a href="mailto:anajulia3907@gmail.com">Enviar</a>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
         <section id="footer">
