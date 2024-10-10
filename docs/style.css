@@ -4,19 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-#links a {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    position: sticky;
-    bottom: 0;
-    margin-left: 10px;
-}
-
-#links a svg {
-    color: #201d1e;
-    width: 35px;
-    height: 35px;
+nav {
+    background-color: #fcbbcb;
 }
 
 #resumo {
@@ -27,5 +16,9 @@
 button a {
     cursor: pointer;
     text-decoration: none;
+    color: #b9476a;
+}
+
+svg {
     color: #b9476a;
 }

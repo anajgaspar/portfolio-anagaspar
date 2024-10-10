@@ -8,15 +8,16 @@
     <link rel="shortcut icon" href="./images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <main>
         <header id="home">
-            <nav class="navbar navbar-expand-md sticky-top">
+            <nav class="navbar fixed-top navbar-expand-md">
                 <div class="container-fluid">
                     <a href="#home" class="navbar-brand mx-4"><span style='color: #B9476A'><</span>anagaspar<span style='color: #B9476A'>/></span></a>
                     <div class="navbar-nav mx-4 flex gap-3">
-                        <a href="#home" class="nav-link active" aria-current="page">Home</a>
+                        <a href="#home" class="nav-link active">Home</a>
                         <a href="#skills" class="nav-link">Skills</a>
                         <a href="#sobre" class="nav-link">Sobre</a>
                         <a href="#projetos" class="nav-link">Projetos</a>
@@ -31,12 +32,11 @@
                 <h4 class="fs-3" style="color: #B9476A">Ana Gaspar</h4>
                 <h4 class="fs-3">Desenvolvedora de Software</h4>
                 <h4 class="fs-6" style="color: #B9476A">Iniciante</h4>
-                <button type="button" class="btn btn-outline-light mt-3">
-                    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:c80b9fd0-13d0-41f8-a706-fd7f17243bd3" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-                        </svg> Resumo
-                    </a> 
+                <button type="button" class="btn btn-outline-danger mt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                    </svg>
+                    <a href="" download> Resumo </a> 
                 </button>
             </div>
         </section>
@@ -44,8 +44,8 @@
             <div class="container-md">
                 <h4 class="fs-3">Linguagens e tecnologias</h4>
                 <p class="fs-6">Aqui estão as linguagens e tecnologias que possuo contato.</p>
-                <div class="pt-5">
-                    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,figma,mysql,python,flask,git" class="mx-auto d-block"">
+                <div class="py-5">
+                    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,figma,mysql,python,flask,git" class="mx-auto d-block">
                 </div>
             </div>
         </section>
@@ -53,8 +53,63 @@
             <div class="container-md">
                 <h4 class="fs-3">Sobre</h4>
                 <p class="fs-6">Um pouco sobre mim.</p>
-                <img src="" class="col" style="width: 400px;">
-                <p class="fs-6 col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatum voluptates, natus voluptas deserunt inventore id nesciunt nihil aperiam ducimus suscipit dolor animi tenetur fuga nulla aliquam odio soluta ipsam.</p>
+                <div class="row justify-content-center">
+                    <img src="img" class="col-2 py-5" style="width: 400px;">
+                    <p class="fs-6 col-3 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatum voluptates, natus voluptas deserunt inventore id nesciunt nihil aperiam ducimus suscipit dolor animi tenetur fuga nulla aliquam odio soluta ipsam.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="container-md">
+                <h4 class="fs-3">Projetos</h4>
+                <p class="fs-6">Projetos que desenvolvi.</p>
+                <div class="row justify-content-center row-cols-1 g-4 py-5">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">API - Desempenho de Vereadores</h4>
+                                <a href="https://github.com/Draco-Imperium/API_FATEC1" class="card-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                      </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="" class="card-img-top">
+                            <div class="card-body">
+                                <h4 class="card-title">Portfólio - Ana Gaspar</h4>
+                                <a href="https://github.com/anajgaspar/portfolio-anagaspar" class="card-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container-md">
+                <h4 class="fs-3">Contato</h4>
+                <p class="fs-6">Entre em contato!</p>
+                <button class="btn btn-outline-danger d-block mx-auto p-2 my-5" style="width: 120px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg>
+                    <a href="mailto:anajulia3907@gmail.com">E-mail</a>
+                </button>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container-lg">
+                <p class="text-center" style="font-size: 11px;">© 2024 Ana Gaspar - Todos os direitos reservados.</p>
             </div>
         </section>
     </main>
