@@ -21,6 +21,7 @@ nav {
     padding: 8px 12px;
     font-size: 14px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-custom:hover {
@@ -32,12 +33,6 @@ nav {
 #resumo {
     padding-top: 200px;
     padding-bottom: 210px;
-}
-
-button a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #B9476A;
 }
 
 svg {
