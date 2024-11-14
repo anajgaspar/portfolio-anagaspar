@@ -5,18 +5,17 @@
 }
 
 main {
-    background: linear-gradient(to bottom, #fab9c6 4%, #fccad4 30%, #fcd9e0 45%, white 60%);
+    background: linear-gradient(to bottom, #fcd9e0 45%, white 60%);
 }
 
 nav {
-    background-color: #fab9c6;
-    opacity: 90%;
+    background-color: #fcd9e0;
 }
 
 .btn-custom {
     background-color: transparent;
-    color: #B9476A;
-    border: 2px solid #B9476A;
+    color: #d45178;
+    border: 2px dashed #d45178;
     border-radius: 10px;
     padding: 8px 12px;
     font-size: 14px;
@@ -25,9 +24,12 @@ nav {
 }
 
 .btn-custom:hover {
-    color: #B9476A;
-    border-color: #B9476A;
-    transform: scale(1.05);
+    color: black;
+    border: 2px dashed black;
+}
+
+.btn-custom:hover > #custom-btn-icon {
+    color: black;
 }
 
 #resumo {
@@ -36,7 +38,7 @@ nav {
 }
 
 svg {
-    color: #b9476a;
+    color: #d45178;
 }
 
 #card {
@@ -51,7 +53,7 @@ section {
 }
 
 .custom-hr {
-    background-color: #B9476A;
+    background-color: #d45178;
     height: 3px;
     width: auto;
     border: none;
@@ -59,10 +61,14 @@ section {
 }
 
 #link-contatos {
-    transition: transform 0.4s ease, filter 0.4s ease;
-    filter: grayscale(80%);
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#link-contatos:hover {
-    filter: grayscale(0%);
+#link-contatos:hover svg {
+    color: black;
+}
+
+.nav-underline .nav-link {
+    color: #d45178;
 }
